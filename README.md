@@ -19,3 +19,21 @@ Navigate to URL http://localhost:5000
 You should be able to view the homepage.
 
 Now fill the required details and click on predict button and you can see the prediction.
+
+
+## ML-Model-Flask-Deployment(Heroku Cloud)
+we need two extra things which is 
+1) **Procfile** - For Heroku to be able to run our application like it should, we need to define a set of processes/commands that it should run beforehand. These commands are        located in the Procfile:
+     web: gunicorn app:app 
+
+2) **requirements.txt** - we need to define which libraries our application uses. That way, Heroku knows which ones to provide for us, similar to how we install them locally          when developing the app.
+
+This way we end up with a requirements.txt file that contains the libraries we're using and their versions:
+
+Click==7.0
+Flask==1.1.1
+gunicorn==19.9.0
+itsdangerous==1.1.0
+Jinja2==2.10.1
+MarkupSafe==1.1.1
+Werkzeug==0.15.6
