@@ -23,17 +23,21 @@ Now fill the required details and click on predict button and you can see the pr
 
 ## ML-Model-Flask-Deployment(Heroku Cloud)
 we need two extra things which is 
-1) **Procfile** - For Heroku to be able to run our application like it should, we need to define a set of processes/commands that it should run beforehand. These commands are        located in the Procfile:
+1) **Procfile** - For Heroku to be able to run our application like it should, we need to define a set of processes/commands that it should run beforehand. These commands are        located in the Procfile:<br>
      web: gunicorn app:app 
 
 2) **requirements.txt** - we need to define which libraries our application uses. That way, Heroku knows which ones to provide for us, similar to how we install them locally          when developing the app.
 
-This way we end up with a requirements.txt file that contains the libraries we're using and their versions:
+     This way we end up with a requirements.txt file that contains the libraries we're using and their versions:<br>
 
-Click==7.0
-Flask==1.1.1
-gunicorn==19.9.0
-itsdangerous==1.1.0
-Jinja2==2.10.1
-MarkupSafe==1.1.1
-Werkzeug==0.15.6
+     Flask==1.1.1<br>
+     gunicorn==19.9.0<br>
+     itsdangerous==1.1.0<br>
+     Jinja2==2.10.1<br>
+     MarkupSafe==1.1.1<br><br>
+     Werkzeug==0.15.5<br>
+     numpy>=1.9.2<br>
+     scipy>=0.15.1<br>
+     scikit-learn>=0.18<br>
+     matplotlib>=1.4.3<br>
+     pandas>=0.19<br>
