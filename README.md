@@ -34,7 +34,7 @@ we need two extra things which is
      gunicorn==19.9.0<br>
      itsdangerous==1.1.0<br>
      Jinja2==2.10.1<br>
-     MarkupSafe==1.1.1<br><br>
+     MarkupSafe==1.1.1<br>
      Werkzeug==0.15.5<br>
      numpy>=1.9.2<br>
      scipy>=0.15.1<br>
