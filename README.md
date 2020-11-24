@@ -1,4 +1,4 @@
-##ML-Model-Flask-Deployment(Locally)##
+## ML-Model-Flask-Deployment(Locally)
 
 Project Details:
 This project has four major parts :
